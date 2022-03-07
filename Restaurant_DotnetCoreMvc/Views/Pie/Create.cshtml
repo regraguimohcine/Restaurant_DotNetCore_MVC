@@ -1,0 +1,21 @@
+﻿@model Pie
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form asp-controller="Pie" asp-action="Create" method="Post">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" asp-for="Name" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Description</label>
+    <input type="text" asp-for="Description" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+  </div>  <div class="form-group">
+    <label for="formGroupExampleInput">Price</label>
+    <input type="text" asp-for="Price" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  </div>
+  <button type="submit" class="btn btn-primary">Save</button>
+</form>
